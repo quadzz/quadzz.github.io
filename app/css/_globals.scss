@@ -1,0 +1,55 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+body {
+    margin: 0; 
+    padding: 0;
+    color: $textColor;
+    font-family: 'Public Sans', sans-serif;
+    font-size: $font-main;
+    line-height: 1.3;
+    background-color: $darkGray;
+    height: 100%;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+.text-light {
+    color: $textColor !important;
+}
+
+.container {
+    @media screen and (max-width: $normalScreen) {
+        width: 100%;    
+    }
+
+    @media screen and (min-width: $normalScreen) {
+        width: 80%;
+    }
+
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+}

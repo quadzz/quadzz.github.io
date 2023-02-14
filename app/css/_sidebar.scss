@@ -1,0 +1,18 @@
+.sidebar-container {
+    .sidebar {
+        grid-area: sidebar;
+        text-align: center;
+        color: $textColor;
+        
+        &__logo {
+            font-family: 'Montserrat', sans-serif;
+
+            span {
+                color: $lightBlue;
+                font-size: 3em;
+                font-weight: bold;
+            }
+            color: $lighterGray;
+        }
+    }
+}
