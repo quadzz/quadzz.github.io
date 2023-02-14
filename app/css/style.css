@@ -93,7 +93,10 @@ header .logo span:hover {
   color: #d3d3d3;
   text-align: center;
   margin: 0 auto;
-  word-wrap: break-word !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -ms-word-break: break-word;
+  word-break: break-word;
 }
 .content h1 {
   font-size: 2em;
@@ -183,15 +186,16 @@ header .logo span:hover {
   padding-left: 20px;
   padding-bottom: 8px;
   padding-right: 10px;
-  overflow: hidden;
-  word-wrap: break-word;
 }
 @media screen and (max-width: 901px) {
+  .terminal__body .line {
+    font-size: 0.7rem;
+  }
   .terminal__body .parameter {
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
   .terminal__body .command {
-    font-size: 0.7em;
+    font-size: 0.5em;
   }
   .terminal__body .data {
     font-size: 0.6em;
@@ -215,7 +219,7 @@ header .logo span:hover {
   }
 }
 .terminal__body .command {
-  margin-top: 10px;
+  margin-top: 15px;
   color: yellow;
 }
 .terminal__body .parameter {
@@ -223,6 +227,19 @@ header .logo span:hover {
 }
 .terminal__body .data {
   padding-top: 1rem;
+}
+.terminal pre {
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+.terminal .links {
+  text-align: justify;
+}
+.terminal .links a {
+  margin-top: 10px !important;
 }
 
 .footer {
