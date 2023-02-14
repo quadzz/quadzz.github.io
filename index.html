@@ -15,38 +15,9 @@
 <body>
     <div class="container">
         <header>
-            <div class="navbar">
-                <div class="navbar-container">
-                    <nav class="navbar">
-                        <div class="navbar-container container">
-                            <input type="checkbox" name="" id="" />
-                            <div class="hamburger-lines">
-                                <span class="line l1"></span>
-                                <span class="line l2"></span>
-                                <span class="line l3"></span>
-                            </div>
-                            <ul class="menu-items">
-                                <li>
-                                    <a href="https://github.com/quadzz" target="_blank">
-                                        <i class="fa fa-github fa-1x" aria-hidden="true"></i>| GitHub
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/karolina-ochlik/" target="_blank">
-                                        <i class="fa fa-linkedin fa-1x" aria-hidden="true"></i>| LinkedIn
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailto:karolina@ochlik.pl" target="_blank">
-                                        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>|  Mail
-                                    </a>
-                                </li>
-                            </ul>
-                            <a href="/" class="logo">
-                                <span>ko</span><span class="text-light">.</span>
-                            </a>
-                </div>
-            </div>
+            <a href="/" class="logo">
+                <span>ko</span><span class="text-light">.</span>
+            </a>
         </header>
         <div class="content">
             <h2>Hello, I'm</h2>
@@ -63,10 +34,14 @@
                     </div>
                     <div class="terminal__title">KOsh</div>
                 </div>
-                <div class="terminal__body">
-                    <pre><span class="beginning">></span>  <span class="command">Get-UserName </span></span>
-<span class="data">Karolina Ochlik</span>
-
+                <div class="terminal__body"><pre>
+<span class="beginning">></span> <span class="command">Get-UserInfo </span>| <span class="command">Select </span><span class="data">Area</span>
+<span class="data">Area
+------------
+DevOps Consultant and Trainer
+Programmer
+Communications Trainer
+</span>
 <span class="beginning">></span> <span class="command">Get-UserInfo </span>| <span class="command">Select </span><span class="data">Programming</span>
 <span class="data">Programming
 ------------
@@ -97,12 +72,20 @@ CKAD
 CKA
 Certified Google Cloud Leader
 Certified ScrumMaster (CSM)
+</span>
+<span class="beginning">></span> <span class="command">Get-UserInfo </span>| <span class="command">Select </span><span class="data">ContactInfo-Clickable</span>
+<span class="data">ContactInfo-Clickable
+------------
+<a href="https://www.linkedin.com/in/karolina-ochlik/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+<a href="https://github.com/quadzz" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+<a href="https://stackoverflow.com/users/5720797/karolina-ochlik" target="_blank"><i class="fa-brands fa-stack-overflow" aria-hidden="true"></i> StackOverflow</a>
+<a href="mailto:karolina@ochlik.pl" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> Mail</a>
                     </pre>
                 </div>
             </div>
         </div>
         <div class="footer">
-            <p>&copy; 2023 Karolina Ochlik</p>
+            <p>&copy; <span class="year"></span> Karolina Ochlik</p>
         </div>
       </div>
     <script src="app/js/script.js"></script>

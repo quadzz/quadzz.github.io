@@ -26,6 +26,22 @@
     .underscore {
         font-size: 2rem;
     }    
+
+    a, a:visited {
+        font-size: 2.2rem;
+        color: $textColor;
+    }
+
+    @media screen and (max-width: $normalScreen) {
+        a, a:visited {
+            font-size: 1.8rem;
+        }
+    }
+
+    a:hover {
+        color: $lighterGray;
+        transition: color 0.4s ease-in-out;
+    }
 }
 
 .about {
@@ -138,13 +154,6 @@
 
         .data {
             padding-top: 1rem;
-        }
-
-        table {
-            td {
-                vertical-align: top;                
-                padding-right: 1em;
-            }
         }
     }
 }

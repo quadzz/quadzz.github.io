@@ -13,4 +13,9 @@ function renderUnderscore() {
   }, 400);
 }
 
+function getYear() {
+  document.querySelector(".year").textContent = (new Date().getFullYear());
+}
+
 renderUnderscore();
+getYear();
